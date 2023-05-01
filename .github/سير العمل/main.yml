@@ -1,0 +1,4 @@
+الحصول على AdminAuditLogConfig | تنسيق قائمة UnifiedAuditLogIngestionEnabled
+$ بيرمس | foreach { Get-ManagementRoleAssignment -Role $ _. Name -Delegating $ false | تنسيق-جدول-دور تلقائي ، دور أسيجني ، دور أسيجني نامي }
+$ Perms = Get-ManagementRole -Cmdlet <Cmdlet> [ -CmdletParameters <Parameter1> ، <Parameter2> ، ... ]
+$na = Get-ManagementRole; $na | foreach {If ((Get-ManagementRoleAssignment -Role $_.Name -Delegating $false) -eq $null) {$_.Name}}
